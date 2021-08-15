@@ -41,20 +41,20 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 
 ### 1D and 2D Array
 
-| Title                                                                                             | Solution                            | Difficulty |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------- |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           |                                     | Easy       |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 |                                     | Easy       |
-| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |                                     | Medium     |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                     | Medium     |
-| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               |                                     | Medium     |
-| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                     | Medium     |
-| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](./string-compression/sol.cpp) | Medium     |
-| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                     | Medium     |
-| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             |                                     | Medium     |
-| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                     |                                     | Medium     |
-| [Rotate Image](https://leetcode.com/problems/rotate-image/)                                       |                                     | Medium     |
-| [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)                             |                                     | Medium     |
+| Title                                                                                             | Solution                                | Difficulty |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------- |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           |                                         | Easy       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 |                                         | Easy       |
+| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |                                         | Medium     |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                         | Medium     |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp) | Medium     |
+| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                         | Medium     |
+| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](./string-compression/sol.cpp)     | Medium     |
+| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                         | Medium     |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             |                                         | Medium     |
+| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                     |                                         | Medium     |
+| [Rotate Image](https://leetcode.com/problems/rotate-image/)                                       |                                         | Medium     |
+| [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)                             |                                         | Medium     |
 
 ### String
 
@@ -213,21 +213,21 @@ _make sure you can solve dfs both recursively **and** iteratively_
 
 ### BFS or DFS
 
-| Title                                                                                                                                         | Solution | Difficulty |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
-| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)                                                   |          | Easy       |
-| [Convert Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)                                      |          | Easy       |
-| [Clone Graph](https://leetcode.com/problems/clone-graph/)                                                                                     |          | Medium     |
-| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                                                     |          | Medium     |
-| [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                         |          | Medium     |
-| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                           |          | Medium     |
-| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |          | Medium     |
-| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                     |          | Medium     |
-| [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                                     |          | Medium     |
-| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                                                                       |          | Medium     |
-| [Word Ladder](https://leetcode.com/problems/word-ladder/)                                                                                     |          | Medium     |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                   |          | Hard       |
-| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                 |          | Hard       |
+| Title                                                                                                                                         | Solution                                   | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------- |
+| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)                                                   |                                            | Easy       |
+| [Convert Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)                                      |                                            | Easy       |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/)                                                                                     |                                            | Medium     |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                                                     | [C++](pacific-atlantic-water-flow/sol.cpp) | Medium     |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                         |                                            | Medium     |
+| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                           |                                            | Medium     |
+| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |                                            | Medium     |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                     |                                            | Medium     |
+| [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                                     |                                            | Medium     |
+| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                                                                       |                                            | Medium     |
+| [Word Ladder](https://leetcode.com/problems/word-ladder/)                                                                                     |                                            | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                   |                                            | Hard       |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                 |                                            | Hard       |
 
 ### Heaps
 
@@ -344,28 +344,28 @@ https://emre.me/coding-patterns/palindromes/
 https://emre.me/coding-patterns/staircase/  
 https://emre.me/coding-patterns/knapsack/
 
-| Title                                                                                                                         | Solution | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                             |          | Easy       |
-| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                       |          | Easy       |
-| [House Robber](https://leetcode.com/problems/house-robber/)                                                                   |          | Easy       |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                           |          | Easy       |
-| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |          | Medium     |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                             |          | Medium     |
-| [Coin Change](https://leetcode.com/problems/coin-change/)                                                                     |          | Medium     |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                               |          | Medium     |
-| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                       |          | Medium     |
-| [Word Break](https://leetcode.com/problems/word-break/)                                                                       |          | Medium     |
-| [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                             |          | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                       |          | Medium     |
-| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)                                                     |          | Medium     |
-| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)                                                       |          | Medium     |
-| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                                                             |          | Medium     |
-| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                                     |          | Medium     |
-| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                                                   |          | Medium     |
-| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                                             |          | Medium     |
-| [Jump Game](https://leetcode.com/problems/jump-game/)                                                                         |          | Medium     |
-| [Paint Fence](https://leetcode.com/problems/paint-fence/)                                                                     |          | Medium     |
+| Title                                                                                                                         | Solution                                       | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                             | [C++](best-time-to-buy-and-sell-stock/sol.cpp) | Easy       |
+| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                       |                                                | Easy       |
+| [House Robber](https://leetcode.com/problems/house-robber/)                                                                   |                                                | Easy       |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                           |                                                | Easy       |
+| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |                                                | Medium     |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                             |                                                | Medium     |
+| [Coin Change](https://leetcode.com/problems/coin-change/)                                                                     |                                                | Medium     |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                               |                                                | Medium     |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                       | [C++](longest-common-subsequence/sol.cpp)      | Medium     |
+| [Word Break](https://leetcode.com/problems/word-break/)                                                                       |                                                | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                             |                                                | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                       |                                                | Medium     |
+| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)                                                     |                                                | Medium     |
+| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)                                                       |                                                | Medium     |
+| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                                                             |                                                | Medium     |
+| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                                     |                                                | Medium     |
+| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                                                   |                                                | Medium     |
+| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                                             |                                                | Medium     |
+| [Jump Game](https://leetcode.com/problems/jump-game/)                                                                         |                                                | Medium     |
+| [Paint Fence](https://leetcode.com/problems/paint-fence/)                                                                     |                                                | Medium     |
 
 ### Backtracking
 
