@@ -41,20 +41,20 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 
 ### 1D and 2D Array
 
-| Title                                                                                             | Solution                                | Difficulty |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------- |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           |                                         | Easy       |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 |                                         | Easy       |
-| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |                                         | Medium     |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                         | Medium     |
-| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp) | Medium     |
-| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                         | Medium     |
-| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](./string-compression/sol.cpp)     | Medium     |
-| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                         | Medium     |
-| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             |                                         | Medium     |
-| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                     |                                         | Medium     |
-| [Rotate Image](https://leetcode.com/problems/rotate-image/)                                       |                                         | Medium     |
-| [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)                             |                                         | Medium     |
+| Title                                                                                             | Solution                                       | Difficulty |
+| ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           |                                                | Easy       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 |                                                | Easy       |
+| [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C++](find-all-duplicates-in-an-array/sol.cpp) | Medium     |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                                | Medium     |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp)        | Medium     |
+| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                                | Medium     |
+| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](./string-compression/sol.cpp)            | Medium     |
+| [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                                | Medium     |
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             | [C++](set-matrix-zeroes/sol.cpp)               | Medium     |
+| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                     |                                                | Medium     |
+| [Rotate Image](https://leetcode.com/problems/rotate-image/)                                       |                                                | Medium     |
+| [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)                             |                                                | Medium     |
 
 ### String
 
@@ -77,8 +77,8 @@ https://emre.me/coding-patterns/sliding-window/
 | Title                                                                                                                                                           | Solution                                   | Difficulty |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------- |
 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                                           | [C++](./minimum-size-subarray-sum/sol.cpp) | Medium     |
-| [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                                                                                         |                                            | Medium     |
-| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                                                   |                                            | Medium     |
+| [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                                                                                         | [C++](fruit-into-baskets/sol.cpp)          | Medium     |
+| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                                                   | [C++](permutation-in-string/sol.cpp)       | Medium     |
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)                                 |                                            | Medium     |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                                               |                                            | Medium     |
 | [Longest Continuous Subarray with Abs Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) |                                            | Medium     |
