@@ -153,7 +153,7 @@ https://emre.me/coding-patterns/cyclic-sort/
 | Title                                                                                               | Solution                                                  | Difficulty |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
 | [Find all missing numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [C++](./find-all-numbers-disappeared-in-an-array/sol.cpp) | Easy       |
-| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)                     |                                                           | Hard       |
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)                     | [C++](first-missing-positive/sol.cpp)                     | Hard       |
 
 ### Linked List
 
@@ -271,21 +271,21 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 
 https://emre.me/coding-patterns/modified-binary-search/
 
-| Title                                                                                                               | Solution                     | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------- |
-| [Binary Search](https://leetcode.com/problems/binary-search/)                                                       | [C++](binary-search/sol.cpp) | Easy       |
-| [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) |                              | Easy       |
-| [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                     |                              | Easy       |
-| [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)   |                              | Medium     |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         |                              | Medium     |
-| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                               |                              | Medium     |
-| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                     |                              | Medium     |
-| [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)               |                              | Medium     |
-| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                             |                              | Medium     |
-| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)                                       |                              | Medium     |
-| [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)                                   |                              | Medium     |
-| [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)   |                              | Medium     |
-| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)                                             |                              | Easy       |
+| Title                                                                                                               | Solution                                               | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------- |
+| [Binary Search](https://leetcode.com/problems/binary-search/)                                                       | [C++](binary-search/sol.cpp)                           | Easy       |
+| [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) |                                                        | Easy       |
+| [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                     |                                                        | Easy       |
+| [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)   | [C++](kth-smallest-element-in-a-sorted-matrix/sol.cpp) | Medium     |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         |                                                        | Medium     |
+| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                               |                                                        | Medium     |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                     |                                                        | Medium     |
+| [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)               |                                                        | Medium     |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                             |                                                        | Medium     |
+| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)                                       |                                                        | Medium     |
+| [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)                                   |                                                        | Medium     |
+| [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)   |                                                        | Medium     |
+| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)                                             |                                                        | Easy       |
 
 ---
 
@@ -344,28 +344,31 @@ https://emre.me/coding-patterns/palindromes/
 https://emre.me/coding-patterns/staircase/  
 https://emre.me/coding-patterns/knapsack/
 
-| Title                                                                                                                         | Solution                                       | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                             | [C++](best-time-to-buy-and-sell-stock/sol.cpp) | Easy       |
-| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                       |                                                | Easy       |
-| [House Robber](https://leetcode.com/problems/house-robber/)                                                                   |                                                | Easy       |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                           |                                                | Easy       |
-| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) |                                                | Medium     |
-| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                             |                                                | Medium     |
-| [Coin Change](https://leetcode.com/problems/coin-change/)                                                                     |                                                | Medium     |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                               |                                                | Medium     |
-| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                       | [C++](longest-common-subsequence/sol.cpp)      | Medium     |
-| [Word Break](https://leetcode.com/problems/word-break/)                                                                       |                                                | Medium     |
-| [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                             |                                                | Medium     |
-| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                       |                                                | Medium     |
-| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)                                                     |                                                | Medium     |
-| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)                                                       |                                                | Medium     |
-| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                                                             |                                                | Medium     |
-| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                                     |                                                | Medium     |
-| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                                                   |                                                | Medium     |
-| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                                             |                                                | Medium     |
-| [Jump Game](https://leetcode.com/problems/jump-game/)                                                                         |                                                | Medium     |
-| [Paint Fence](https://leetcode.com/problems/paint-fence/)                                                                     |                                                | Medium     |
+| Title                                                                                                                                       | Solution                                                            | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------- |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                           | [C++](best-time-to-buy-and-sell-stock/sol.cpp)                      | Easy       |
+| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                                     | [C++](binary-tree-level-order-traversal-ii/sol.cpp)                 | Easy       |
+| [House Robber](https://leetcode.com/problems/house-robber/)                                                                                 |                                                                     | Easy       |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                         |                                                                     | Easy       |
+| [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](best-time-to-buy-and-sell-stock-with-transaction-fee/sol.cpp) | Medium     |
+| [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)               | [C++](best-time-to-buy-and-sell-stock-with-cooldown/sol.cpp)        | Medium     |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                           |                                                                     | Medium     |
+| [Coin Change](https://leetcode.com/problems/coin-change/)                                                                                   |                                                                     | Medium     |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                                             |                                                                     | Medium     |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                                     | [C++](longest-common-subsequence/sol.cpp)                           | Medium     |
+| [Word Break](https://leetcode.com/problems/word-break/)                                                                                     | [C++](word-break/sol.cpp)                                           | Medium     |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | [C++](combination-sum/sol.cpp)                                      | Medium     |
+| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                                     |                                                                     | Medium     |
+| [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)                                                                   |                                                                     | Medium     |
+| [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)                                                                     |                                                                     | Medium     |
+| [House Robber II](https://leetcode.com/problems/house-robber-ii/)                                                                           |                                                                     | Medium     |
+| [Decode Ways](https://leetcode.com/problems/decode-ways/)                                                                                   |                                                                     | Medium     |
+| [Unique Paths](https://leetcode.com/problems/unique-paths/)                                                                                 |                                                                     | Medium     |
+| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)                                                                           |                                                                     | Medium     |
+| [Jump Game](https://leetcode.com/problems/jump-game/)                                                                                       |                                                                     | Medium     |
+| [Paint Fence](https://leetcode.com/problems/paint-fence/)                                                                                   |                                                                     | Medium     |
+| [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)                                   | [C++](best-time-to-buy-and-sell-stock-iii/sol.cpp)                  | Hard       |
+| [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)                                     | [C++](best-time-to-buy-and-sell-stock-iv/sol.cpp)                   | Hard       |
 
 ### Backtracking
 
@@ -374,7 +377,7 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 | Title                                                                                                         | Solution                                  | Difficulty |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
 | [Combinations](https://leetcode.com/problems/combinations/)                                                   |                                           | Medium     |
-| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                   |                                           | Medium     |
+| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                   | [C++](generate-parentheses/sol.cpp)       | Medium     |
 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)                             |                                           | Medium     |
 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |                                           | Medium     |
 | [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)                           |                                           | Medium     |
