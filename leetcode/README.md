@@ -23,6 +23,7 @@
     - [Trie](#trie)
     - [Dynamic Programming](#dynamic-programming)
     - [Backtracking](#backtracking)
+    - [Design](#design)
   - [Reference](#reference)
 
 ## About
@@ -49,7 +50,7 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                                | Medium     |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp)        | Medium     |
 | [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                                | Medium     |
-| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](./string-compression/sol.cpp)            | Medium     |
+| [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](string-compression/sol.cpp)              | Medium     |
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                                | Medium     |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             | [C++](set-matrix-zeroes/sol.cpp)               | Medium     |
 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                     |                                                | Medium     |
@@ -63,7 +64,7 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                 |                                              | Easy       |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         |                                              | Easy       |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           |                                              | Easy       |
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                               | [C++](./group-anagrams/sol.cpp)              | Medium     |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                               | [C++](group-anagrams/sol.cpp)                | Medium     |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](longest-palindromic-substring/sol.cpp) | Medium     |
 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)               | [C++](palindromic-substrings/sol.cpp)        | Medium     |
 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)         |                                              | Medium     |
@@ -74,24 +75,24 @@ https://leetcode.com/problems/minimum-window-substring/discuss/26808/Here-is-a-1
 https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b  
 https://emre.me/coding-patterns/sliding-window/
 
-| Title                                                                                                                                                           | Solution                                   | Difficulty |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------- |
-| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                                           | [C++](./minimum-size-subarray-sum/sol.cpp) | Medium     |
-| [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                                                                                         | [C++](fruit-into-baskets/sol.cpp)          | Medium     |
-| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                                                   | [C++](permutation-in-string/sol.cpp)       | Medium     |
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)                                 |                                            | Medium     |
-| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                                               |                                            | Medium     |
-| [Longest Continuous Subarray with Abs Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) |                                            | Medium     |
-| [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)                                                                             |                                            | Medium     |
-| [Max Points You Can Obtain From Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)                                                 |                                            | Medium     |
-| [Longest Substring with at Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)                 |                                            | Medium     |
-| [Number of Subsequences that Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)       |                                            | Medium     |
-| [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/)                                                                                 |                                            | Medium     |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                                 |                                            | Hard       |
-| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                             |                                            | Hard       |
-| [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)                                           |                                            | Hard       |
-| [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/)       |                                            | Hard       |
-| [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)                                           |                                            | Hard       |
+| Title                                                                                                                                                           | Solution                                 | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                                           | [C++](minimum-size-subarray-sum/sol.cpp) | Medium     |
+| [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                                                                                         | [C++](fruit-into-baskets/sol.cpp)        | Medium     |
+| [Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                                                   | [C++](permutation-in-string/sol.cpp)     | Medium     |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)                                 |                                          | Medium     |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                                               |                                          | Medium     |
+| [Longest Continuous Subarray with Abs Diff <= Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) |                                          | Medium     |
+| [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)                                                                             |                                          | Medium     |
+| [Max Points You Can Obtain From Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)                                                 |                                          | Medium     |
+| [Longest Substring with at Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)                 |                                          | Medium     |
+| [Number of Subsequences that Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)       |                                          | Medium     |
+| [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/)                                                                                 |                                          | Medium     |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                                 |                                          | Hard       |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                             |                                          | Hard       |
+| [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)                                           |                                          | Hard       |
+| [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/)       |                                          | Hard       |
+| [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)                                           |                                          | Hard       |
 
 ---
 
@@ -99,89 +100,89 @@ https://emre.me/coding-patterns/sliding-window/
 
 https://emre.me/coding-patterns/two-pointers/
 
-| Title                                                                                             | Solution                      | Difficulty |
-| ------------------------------------------------------------------------------------------------- | ----------------------------- | ---------- |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                   |                               | Easy       |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [C++](./two-sum/sol.cpp)      | Easy       |
-| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)             |                               | Easy       |
-| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)                |                               | Easy       |
-| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)             |                               | Medium     |
-| [3 Sum](https://leetcode.com/problems/3sum/)                                                      |                               | Medium     |
-| [3 Sum Closest](https://leetcode.com/problems/3sum-closest/)                                      | [C++](./3sum-closest/sol.cpp) | Medium     |
-| [Subarrays with Product Less than K](https://leetcode.com/problems/subarray-product-less-than-k/) |                               | Medium     |
-| [Sort Colors](https://leetcode.com/problems/sort-colors/)                                         |                               | Medium     |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |                               | Medium     |
-| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                         |                               | Hard       |
+| Title                                                                                             | Solution                    | Difficulty |
+| ------------------------------------------------------------------------------------------------- | --------------------------- | ---------- |
+| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                   |                             | Easy       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [C++](two-sum/sol.cpp)      | Easy       |
+| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)             |                             | Easy       |
+| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)                |                             | Easy       |
+| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)             |                             | Medium     |
+| [3 Sum](https://leetcode.com/problems/3sum/)                                                      |                             | Medium     |
+| [3 Sum Closest](https://leetcode.com/problems/3sum-closest/)                                      | [C++](3sum-closest/sol.cpp) | Medium     |
+| [Subarrays with Product Less than K](https://leetcode.com/problems/subarray-product-less-than-k/) |                             | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors/)                                         |                             | Medium     |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |                             | Medium     |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                         |                             | Hard       |
 
 ### Fast and Slow Pointers
 
 https://emre.me/coding-patterns/fast-slow-pointers/
 
-| Title                                                                                                         | Solution                              | Difficulty |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------- |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                         |                                       | Easy       |
-| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                         |                                       | Easy       |
-| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                               |                                       | Easy       |
-| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)                     |                                       | Easy       |
-| [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)       |                                       | Easy       |
-| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)                                   | [C++](./linked-list-cycle-ii/sol.cpp) | Medium     |
-| [Remove Duplicated from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) |                                       | Medium     |
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                             |                                       | Medium     |
-| [Add Two Number II](https://leetcode.com/problems/add-two-numbers-ii/)                                        |                                       | Medium     |
-| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)           |                                       | Medium     |
-| [Sort List](https://leetcode.com/problems/sort-list/)                                                         |                                       | Medium     |
-| [Reorder List](https://leetcode.com/problems/reorder-list/)                                                   |                                       | Medium     |
+| Title                                                                                                         | Solution                            | Difficulty |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------- |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                         |                                     | Easy       |
+| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                         |                                     | Easy       |
+| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                               |                                     | Easy       |
+| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)                     |                                     | Easy       |
+| [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)       |                                     | Easy       |
+| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)                                   | [C++](linked-list-cycle-ii/sol.cpp) | Medium     |
+| [Remove Duplicated from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) |                                     | Medium     |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                             |                                     | Medium     |
+| [Add Two Number II](https://leetcode.com/problems/add-two-numbers-ii/)                                        |                                     | Medium     |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)           |                                     | Medium     |
+| [Sort List](https://leetcode.com/problems/sort-list/)                                                         |                                     | Medium     |
+| [Reorder List](https://leetcode.com/problems/reorder-list/)                                                   |                                     | Medium     |
 
 ### Intervals
 
 https://emre.me/coding-patterns/merge-intervals/
 
-| Title                                                                                                                   | Solution                         | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- |
-| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms)                                                            |                                  | Easy       |
-| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)                                                     |                                  | Medium     |
-| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                       | [C++](./merge-intervals/sol.cpp) | Medium     |
-| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)                               |                                  | Medium     |
-| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)                                   |                                  | Medium     |
-| [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) |                                  | Medium     |
-| [Insert Interval](https://leetcode.com/problems/insert-interval/)                                                       |                                  | Hard       |
+| Title                                                                                                                   | Solution                                                  | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
+| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms)                                                            |                                                           | Easy       |
+| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)                                                     |                                                           | Medium     |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                       | [C++](merge-intervals/sol.cpp)                            | Medium     |
+| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)                               | [C++](interval-list-intersections/sol.cpp)                | Medium     |
+| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)                                   | [C++](non-overlapping-intervals/sol.cpp)                  | Medium     |
+| [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](minimum-number-of-arrows-to-burst-balloons/sol.cpp) | Medium     |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/)                                                       |                                                           | Medium     |
 
 ### Cyclic Sort
 
 https://emre.me/coding-patterns/cyclic-sort/
 
-| Title                                                                                               | Solution                                                  | Difficulty |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
-| [Find all missing numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [C++](./find-all-numbers-disappeared-in-an-array/sol.cpp) | Easy       |
-| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)                     | [C++](first-missing-positive/sol.cpp)                     | Hard       |
+| Title                                                                                               | Solution                                                | Difficulty |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
+| [Find all missing numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [C++](find-all-numbers-disappeared-in-an-array/sol.cpp) | Easy       |
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)                     | [C++](first-missing-positive/sol.cpp)                   | Hard       |
 
 ### Linked List
 
 https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/
 
-| Title                                                                               | Solution                             | Difficulty |
-| ----------------------------------------------------------------------------------- | ------------------------------------ | ---------- |
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)           | [C++](./reverse-linked-list/sol.cpp) | Easy       |
-| [Intersection](https://leetcode.com/problems/intersection-of-two-linked-lists/)     |                                      | Easy       |
-| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)     |                                      | Medium     |
-| [Rotate List](https://leetcode.com/problems/rotate-list/)                           |                                      | Medium     |
-| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)           |                                      | Medium     |
-| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)         |                                      | Medium     |
-| [Partition Linked List](https://leetcode.com/problems/partition-list/)              |                                      | Medium     |
-| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                      | Hard       |
+| Title                                                                               | Solution                           | Difficulty |
+| ----------------------------------------------------------------------------------- | ---------------------------------- | ---------- |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)           | [C++](reverse-linked-list/sol.cpp) | Easy       |
+| [Intersection](https://leetcode.com/problems/intersection-of-two-linked-lists/)     |                                    | Easy       |
+| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)     |                                    | Medium     |
+| [Rotate List](https://leetcode.com/problems/rotate-list/)                           |                                    | Medium     |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)           |                                    | Medium     |
+| [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)         |                                    | Medium     |
+| [Partition Linked List](https://leetcode.com/problems/partition-list/)              |                                    | Medium     |
+| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) |                                    | Hard       |
 
 ### BFS
 
 https://emre.me/coding-patterns/breadth-first-search/
 
-| Title                                                                                                                           | Solution                                              | Difficulty |
-| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------- |
-| [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)                     | [C++](./binary-tree-level-order-traversal-ii/sol.cpp) | Easy       |
-| [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                             |                                                       | Easy       |
-| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                           |                                                       | Medium     |
-| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)             |                                                       | Medium     |
-| [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)       |                                                       | Medium     |
-| [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) |                                                       | Medium     |
+| Title                                                                                                                           | Solution                                            | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------- |
+| [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)                     | [C++](binary-tree-level-order-traversal-ii/sol.cpp) | Easy       |
+| [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                             |                                                     | Easy       |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                           |                                                     | Medium     |
+| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)             |                                                     | Medium     |
+| [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)       |                                                     | Medium     |
+| [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) |                                                     | Medium     |
 
 ### DFS
 
@@ -277,8 +278,8 @@ https://emre.me/coding-patterns/modified-binary-search/
 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) |                                                        | Easy       |
 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                     |                                                        | Easy       |
 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)   | [C++](kth-smallest-element-in-a-sorted-matrix/sol.cpp) | Medium     |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         |                                                        | Medium     |
-| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                               |                                                        | Medium     |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)         | [C++](find-minimum-in-rotated-sorted-array/sol.cpp)    | Medium     |
+| [Find Peak Element](https://leetcode.com/problems/find-peak-element/)                                               | [C++](find-peak-element/sol.cpp)                       | Medium     |
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                     |                                                        | Medium     |
 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)               |                                                        | Medium     |
 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                                             |                                                        | Medium     |
@@ -322,18 +323,18 @@ https://emre.me/coding-patterns/bitwise-xor/
 
 ### Trie
 
-| Title                                                                                                          | Solution                                    | Difficulty |
-| -------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ---------- |
-| [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)                        |                                             | Easy       |
-| [Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)                              |                                             | Easy       |
-| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                      | [C++](./implement-trie-prefix-tree/sol.cpp) | Medium     |
-| [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array) |                                             | Medium     |
-| [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)                |                                             | Medium     |
-| [Concatenated Words](https://leetcode.com/problems/concatenated-words/)                                        |                                             | Hard       |
-| [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)                            |                                             | Hard       |
-| [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                            |                                             | Hard       |
-| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)          |                                             | Hard       |
-| [Word Squares](https://leetcode.com/problems/word-squares/)                                                    |                                             | Hard       |
+| Title                                                                                                          | Solution                                  | Difficulty |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
+| [Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)                        |                                           | Easy       |
+| [Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)                              |                                           | Easy       |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)                      | [C++](implement-trie-prefix-tree/sol.cpp) | Medium     |
+| [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array) |                                           | Medium     |
+| [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)                |                                           | Medium     |
+| [Concatenated Words](https://leetcode.com/problems/concatenated-words/)                                        |                                           | Hard       |
+| [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)                            |                                           | Hard       |
+| [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)                                            |                                           | Hard       |
+| [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)          |                                           | Hard       |
+| [Word Squares](https://leetcode.com/problems/word-squares/)                                                    |                                           | Hard       |
 
 ---
 
@@ -385,6 +386,13 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)           |                                           | Medium     |
 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)                                                 |                                           | Hard       |
 | [N-Queens](https://leetcode.com/problems/n-queens/)                                                           |                                           | Hard       |
+
+### Design
+
+| Title                                                 | Solution                 | Difficulty |
+| ----------------------------------------------------- | ------------------------ | ---------- |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/) | [C++](lru-cache/sol.cpp) | Medium     |
+| [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](lfu-cache/sol.cpp) | Hard       |
 
 ## Reference
 
