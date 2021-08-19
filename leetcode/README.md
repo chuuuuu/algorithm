@@ -397,8 +397,4 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 ## Reference
 
 - [Interview Question Patterns](https://gist.github.com/jelliott8020)
-- [HackerNoon](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
-- [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) (Course)
-- [Team Blind 75](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) (List)
-- [Cracking The Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?crid=FNKSJQH1QNFP&dchild=1&keywords=cracking+the+coding+interview&qid=1599937209&sprefix=cracking+the+co%2Caps%2C144&sr=8-1) (Book)
-- [Elements of Programming Interviews](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/) (Book, also comes in C++ and Python)
+- [Graph For Beginners](https://leetcode.com/discuss/general-discussion/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions)
