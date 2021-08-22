@@ -24,6 +24,14 @@
     - [Dynamic Programming](#dynamic-programming)
     - [Backtracking](#backtracking)
     - [Design](#design)
+    - [Union Find](#union-find)
+    - [Bipartition](#bipartition)
+    - [Shortest Path: Dijkstra algorithm & Bellman algorithm](#shortest-path-dijkstra-algorithm--bellman-algorithm)
+    - [Minimum Spanning Trees: Prim's and Kruskal's algorithm.](#minimum-spanning-trees-prims-and-kruskals-algorithm)
+    - [Strongly Connected Components: Tarjan's Algorithm / Finding Bridge and Articulation Point](#strongly-connected-components-tarjans-algorithm--finding-bridge-and-articulation-point)
+    - [Hierholzer's algorithm for Eulerian circuits.](#hierholzers-algorithm-for-eulerian-circuits)
+    - [A\* Search](#a-search)
+    - [Max-Flow, Min-Cut](#max-flow-min-cut)
   - [Reference](#reference)
 
 ## About
@@ -294,14 +302,15 @@ https://emre.me/coding-patterns/modified-binary-search/
 
 https://emre.me/coding-patterns/topological-sort/
 
-| Title                                                                                                                       | Solution                       | Difficulty |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------- |
-| [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                           | [C++](course-schedule/sol.cpp) | Medium     |
-| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                                                     |                                | Medium     |
-| [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)                                                 |                                | Medium     |
-| [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)                                            |                                | Medium     |
-| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) |                                | Hard       |
-| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary)                                                          |                                | Hard       |
+| Title                                                                                                                       | Solution                                 | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                           | [C++](course-schedule/sol.cpp)           | Medium     |
+| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                                                     |                                          | Medium     |
+| [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)                                                 |                                          | Medium     |
+| [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction)                                            |                                          | Medium     |
+| [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)                                       | [C++](find-eventual-safe-states/sol.cpp) | Medium     |
+| [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) |                                          | Hard       |
+| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary)                                                          |                                          | Hard       |
 
 ### Binary & Bitwise XOR
 
@@ -393,6 +402,60 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 | ----------------------------------------------------- | ------------------------ | ---------- |
 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [C++](lru-cache/sol.cpp) | Medium     |
 | [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](lfu-cache/sol.cpp) | Hard       |
+
+### Union Find
+
+| Title                                                                                                                     | Solution                            | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------- |
+| [Redundant Connection](https://leetcode.com/problems/redundant-connection/)                                               | [C++](redundant-connection/sol.cpp) | Medium     |
+| [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                                                 |                                     | Medium     |
+| [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/) |                                     | Medium     |
+
+### Bipartition
+
+| Title                                                                       | Solution                            | Difficulty |
+| --------------------------------------------------------------------------- | ----------------------------------- | ---------- |
+| [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) | [C++](possible-bipartition/sol.cpp) | Medium     |
+| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)    |                                     | Medium     |
+
+### Shortest Path: Dijkstra algorithm & Bellman algorithm
+
+| Title                                                                                                                                                                                     | Solution                          | Difficulty |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- |
+| [Network Delay Time](https://leetcode.com/problems/network-delay-time/)                                                                                                                   | [C++](network-delay-time/sol.cpp) | Medium     |
+| [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) |                                   | Medium     |
+| [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)                                                                                         |                                   | Medium     |
+
+### Minimum Spanning Trees: Prim's and Kruskal's algorithm.
+
+| Title                                                                                                                                                               | Solution                                      | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------- |
+| [https://leetcode.com/problems/min-cost-to-connect-all-points/](Min Cost to Connect All Points)                                                                     | [C++](min-cost-to-connect-all-points/sol.cpp) | Medium     |
+| [https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/](Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree) |                                               | Hard       |
+
+### Strongly Connected Components: Tarjan's Algorithm / Finding Bridge and Articulation Point
+
+| Title                                                                                                 | Solution                                         | Difficulty |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------- |
+| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](critical-connections-in-a-network/sol.cpp) | Hard       |
+
+### Hierholzer's algorithm for Eulerian circuits.
+
+| Title                                                                         | Solution | Difficulty |
+| ----------------------------------------------------------------------------- | -------- | ---------- |
+| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) |          | Medium     |
+
+### A\* Search
+
+| Title                                                           | Solution | Difficulty |
+| --------------------------------------------------------------- | -------- | ---------- |
+| [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/) |          | Hard       |
+
+### Max-Flow, Min-Cut
+
+| Title                                                                                       | Solution | Difficulty |
+| ------------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) |          | Hard       |
 
 ## Reference
 
