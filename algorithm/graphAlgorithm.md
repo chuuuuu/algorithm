@@ -1,9 +1,0 @@
-- undirected graph
-    - detect cycle in undirected graph
-    - detect if a graph is bipartite
-    - cut vertice
-    - biconnected components
-- directed graph
-    - topological sort
-    - detect cycle in directed graph
-    - longest path in a DAG
