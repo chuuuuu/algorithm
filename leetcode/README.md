@@ -7,6 +7,7 @@
     - [1D and 2D Array](#1d-and-2d-array)
     - [String](#string)
     - [Sliding Window](#sliding-window)
+    - [Monotonic Queue / Stack](#monotonic-queue--stack)
     - [Two Pointers or Iterators](#two-pointers-or-iterators)
     - [Fast and Slow Pointers](#fast-and-slow-pointers)
     - [Intervals](#intervals)
@@ -19,6 +20,7 @@
     - [Subsets](#subsets)
     - [Modified Binary Search](#modified-binary-search)
     - [Topological Sort](#topological-sort)
+    - [Bucket Sort](#bucket-sort)
     - [Binary & Bitwise XOR](#binary--bitwise-xor)
     - [Trie](#trie)
     - [Dynamic Programming](#dynamic-programming)
@@ -30,6 +32,7 @@
     - [Minimum Spanning Trees: Prim's and Kruskal's algorithm.](#minimum-spanning-trees-prims-and-kruskals-algorithm)
     - [Strongly Connected Components: Tarjan's Algorithm / Finding Bridge and Articulation Point](#strongly-connected-components-tarjans-algorithm--finding-bridge-and-articulation-point)
     - [Hierholzer's algorithm for Eulerian circuits.](#hierholzers-algorithm-for-eulerian-circuits)
+    - [Shortest Hamiltonian Path](#shortest-hamiltonian-path)
     - [A\* Search](#a-search)
     - [Max-Flow, Min-Cut](#max-flow-min-cut)
   - [Reference](#reference)
@@ -52,8 +55,8 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 
 | Title                                                                                             | Solution                                       | Difficulty |
 | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           |                                                | Easy       |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 |                                                | Easy       |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                           | [C++](contains-duplicate/sol.cpp)              | Easy       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [C++](two-sum/sol.cpp)                         | Easy       |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C++](find-all-duplicates-in-an-array/sol.cpp) | Medium     |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                                | Medium     |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp)        | Medium     |
@@ -69,9 +72,10 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 
 | Title                                                                                         | Solution                                     | Difficulty |
 | --------------------------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                 |                                              | Easy       |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         |                                              | Easy       |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           |                                              | Easy       |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                 | [C++](valid-anagram/sol.cpp)                 | Easy       |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                         | [C++](valid-parentheses/sol.cpp)             | Easy       |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                           | [C++](valid-palindrome/sol.cpp)              | Easy       |
+| [Implement strStr()](https://leetcode.com/problems/implement-strstr/)                         | [C++](implement-strstr/sol.cpp)              | Easy       |
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                               | [C++](group-anagrams/sol.cpp)                | Medium     |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](longest-palindromic-substring/sol.cpp) | Medium     |
 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)               | [C++](palindromic-substrings/sol.cpp)        | Medium     |
@@ -96,31 +100,36 @@ https://emre.me/coding-patterns/sliding-window/
 | [Longest Substring with at Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)                 |                                          | Medium     |
 | [Number of Subsequences that Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)       |                                          | Medium     |
 | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/)                                                                                 |                                          | Medium     |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                                 |                                          | Hard       |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                             |                                          | Hard       |
 | [Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)                                           |                                          | Hard       |
 | [Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/)       |                                          | Hard       |
 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)                                           |                                          | Hard       |
 
----
+### Monotonic Queue / Stack
+
+| Title                                                                                                         | Solution | Difficulty |
+| ------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                               |          | Hard       |
+| [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) |          | Hard       |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)               |          | Hard       |
 
 ### Two Pointers or Iterators
 
 https://emre.me/coding-patterns/two-pointers/
 
-| Title                                                                                             | Solution                    | Difficulty |
-| ------------------------------------------------------------------------------------------------- | --------------------------- | ---------- |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                   |                             | Easy       |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [C++](two-sum/sol.cpp)      | Easy       |
-| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)             |                             | Easy       |
-| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)                |                             | Easy       |
-| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)             |                             | Medium     |
-| [3 Sum](https://leetcode.com/problems/3sum/)                                                      |                             | Medium     |
-| [3 Sum Closest](https://leetcode.com/problems/3sum-closest/)                                      | [C++](3sum-closest/sol.cpp) | Medium     |
-| [Subarrays with Product Less than K](https://leetcode.com/problems/subarray-product-less-than-k/) |                             | Medium     |
-| [Sort Colors](https://leetcode.com/problems/sort-colors/)                                         |                             | Medium     |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |                             | Medium     |
-| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                         |                             | Hard       |
+| Title                                                                                             | Solution                              | Difficulty |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------- |
+| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                   | [C++](merge-two-sorted-lists/sol.cpp) | Easy       |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [C++](two-sum/sol.cpp)                | Easy       |
+| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)             |                                       | Easy       |
+| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)                |                                       | Easy       |
+| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)             |                                       | Medium     |
+| [3 Sum](https://leetcode.com/problems/3sum/)                                                      |                                       | Medium     |
+| [3 Sum Closest](https://leetcode.com/problems/3sum-closest/)                                      | [C++](3sum-closest/sol.cpp)           | Medium     |
+| [Subarrays with Product Less than K](https://leetcode.com/problems/subarray-product-less-than-k/) |                                       | Medium     |
+| [Sort Colors](https://leetcode.com/problems/sort-colors/)                                         |                                       | Medium     |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)             |                                       | Medium     |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                         |                                       | Hard       |
 
 ### Fast and Slow Pointers
 
@@ -128,7 +137,7 @@ https://emre.me/coding-patterns/fast-slow-pointers/
 
 | Title                                                                                                         | Solution                            | Difficulty |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------- |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                         |                                     | Easy       |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                         | [C++](linked-list-cycle/sol.cpp)    | Easy       |
 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                         |                                     | Easy       |
 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                               |                                     | Easy       |
 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)                     |                                     | Easy       |
@@ -186,11 +195,12 @@ https://emre.me/coding-patterns/breadth-first-search/
 | Title                                                                                                                           | Solution                                            | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------- |
 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)                     | [C++](binary-tree-level-order-traversal-ii/sol.cpp) | Easy       |
-| [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                             |                                                     | Easy       |
+| [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                             | [C++](average-of-levels-in-binary-tree/sol.cpp)     | Easy       |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                           |                                                     | Medium     |
 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)             |                                                     | Medium     |
 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)       |                                                     | Medium     |
 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) |                                                     | Medium     |
+| [Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)                                       |                                                     | Medium     |
 
 ### DFS
 
@@ -200,7 +210,7 @@ _make sure you can solve dfs both recursively **and** iteratively_
 | Title                                                                                                                                                 | Solution                          | Difficulty |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- |
 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                               | [C++](invert-binary-tree/sol.cpp) | Easy       |
-| [Path Sum](https://leetcode.com/problems/path-sum/)                                                                                                   |                                   | Easy       |
+| [Path Sum](https://leetcode.com/problems/path-sum/)                                                                                                   | [C++](path-sum/sol.cpp)           | Easy       |
 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                 |                                   | Easy       |
 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                     |                                   | Easy       |
 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)                                                                       |                                   | Easy       |
@@ -222,21 +232,21 @@ _make sure you can solve dfs both recursively **and** iteratively_
 
 ### BFS or DFS
 
-| Title                                                                                                                                         | Solution                                   | Difficulty |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------- |
-| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)                                                   |                                            | Easy       |
-| [Convert Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)                                      |                                            | Easy       |
-| [Clone Graph](https://leetcode.com/problems/clone-graph/)                                                                                     |                                            | Medium     |
-| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                                                     | [C++](pacific-atlantic-water-flow/sol.cpp) | Medium     |
-| [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                         |                                            | Medium     |
-| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                           |                                            | Medium     |
-| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |                                            | Medium     |
-| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                     |                                            | Medium     |
-| [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                                     |                                            | Medium     |
-| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                                                                       |                                            | Medium     |
-| [Word Ladder](https://leetcode.com/problems/word-ladder/)                                                                                     |                                            | Medium     |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                   |                                            | Hard       |
-| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                 |                                            | Hard       |
+| Title                                                                                                                                         | Solution                                    | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ---------- |
+| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)                                                   | [C++](minimum-depth-of-binary-tree/sol.cpp) | Easy       |
+| [Convert Sorted Array to BST](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)                                      |                                             | Easy       |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/)                                                                                     |                                             | Medium     |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                                                     | [C++](pacific-atlantic-water-flow/sol.cpp)  | Medium     |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                         |                                             | Medium     |
+| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                           |                                             | Medium     |
+| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) |                                             | Medium     |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                     |                                             | Medium     |
+| [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)                                     |                                             | Medium     |
+| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)                                                                       |                                             | Medium     |
+| [Word Ladder](https://leetcode.com/problems/word-ladder/)                                                                                     |                                             | Medium     |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                   |                                             | Hard       |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                 |                                             | Hard       |
 
 ### Heaps
 
@@ -261,6 +271,7 @@ https://emre.me/coding-patterns/two-heaps/
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)                                   |                                                | Hard       |
 | [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)                                                 |                                                | Hard       |
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                   |                                                | Hard       |
+| [Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) |                                                | Hard       |
 
 ### Subsets
 
@@ -294,9 +305,7 @@ https://emre.me/coding-patterns/modified-binary-search/
 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)                                       |                                                        | Medium     |
 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)                                   |                                                        | Medium     |
 | [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)   |                                                        | Medium     |
-| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)                                             |                                                        | Easy       |
-
----
+| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)                                             |                                                        | Hard       |
 
 ### Topological Sort
 
@@ -311,6 +320,14 @@ https://emre.me/coding-patterns/topological-sort/
 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)                                       | [C++](find-eventual-safe-states/sol.cpp) | Medium     |
 | [Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) |                                          | Hard       |
 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary)                                                          |                                          | Hard       |
+
+### Bucket Sort
+
+| Title                                                                                       | Solution | Difficulty |
+| ------------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) |          | Medium     |
+| [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)             |          | Medium     |
+| [Maximum Gap](https://leetcode.com/problems/maximum-gap/)                                   |          | Hard       |
 
 ### Binary & Bitwise XOR
 
@@ -345,8 +362,6 @@ https://emre.me/coding-patterns/bitwise-xor/
 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)          |                                           | Hard       |
 | [Word Squares](https://leetcode.com/problems/word-squares/)                                                    |                                           | Hard       |
 
----
-
 ### Dynamic Programming
 
 https://emre.me/coding-patterns/longest-common-substring-subsequence/  
@@ -359,7 +374,7 @@ https://emre.me/coding-patterns/knapsack/
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                           | [C++](best-time-to-buy-and-sell-stock/sol.cpp)                      | Easy       |
 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                                     | [C++](binary-tree-level-order-traversal-ii/sol.cpp)                 | Easy       |
 | [House Robber](https://leetcode.com/problems/house-robber/)                                                                                 |                                                                     | Easy       |
-| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                         |                                                                     | Easy       |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                         | [C++](maximum-subarray/sol.cpp)                                     | Easy       |
 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](best-time-to-buy-and-sell-stock-with-transaction-fee/sol.cpp) | Medium     |
 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)               | [C++](best-time-to-buy-and-sell-stock-with-cooldown/sol.cpp)        | Medium     |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                           |                                                                     | Medium     |
@@ -379,6 +394,7 @@ https://emre.me/coding-patterns/knapsack/
 | [Paint Fence](https://leetcode.com/problems/paint-fence/)                                                                                   |                                                                     | Medium     |
 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)                                   | [C++](best-time-to-buy-and-sell-stock-iii/sol.cpp)                  | Hard       |
 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)                                     | [C++](best-time-to-buy-and-sell-stock-iv/sol.cpp)                   | Hard       |
+| [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)                                         |                                                                     | Hard       |
 
 ### Backtracking
 
@@ -386,7 +402,7 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 
 | Title                                                                                                         | Solution                                  | Difficulty |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
-| [Combinations](https://leetcode.com/problems/combinations/)                                                   |                                           | Medium     |
+| [Combinations](https://leetcode.com/problems/combinations/)                                                   | [C++](combinations/sol.cpp)               | Medium     |
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                   | [C++](generate-parentheses/sol.cpp)       | Medium     |
 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)                             |                                           | Medium     |
 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) |                                           | Medium     |
@@ -435,15 +451,27 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 
 ### Strongly Connected Components: Tarjan's Algorithm / Finding Bridge and Articulation Point
 
-| Title                                                                                                 | Solution                                         | Difficulty |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------- |
-| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [C++](critical-connections-in-a-network/sol.cpp) | Hard       |
+| Title                                                                                                                     | Solution                                         | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------- |
+| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)                     | [C++](critical-connections-in-a-network/sol.cpp) | Hard       |
+| [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/) |                                                  | Hard       |
 
 ### Hierholzer's algorithm for Eulerian circuits.
 
-| Title                                                                         | Solution | Difficulty |
-| ----------------------------------------------------------------------------- | -------- | ---------- |
-| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) |          | Medium     |
+| Title                                                                                   | Solution | Difficulty |
+| --------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)           |          | Hard       |
+| [Valid Arrangement of Pairs](https://leetcode.com/problems/valid-arrangement-of-pairs/) |          | Hard       |
+| [Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/)                   |          | Hard       |
+
+### Shortest Hamiltonian Path
+
+| Title                                                                                                                       | Solution | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring/)                               |          | Hard       |
+| [Minimum Cost to Connect Two Groups of Points](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/) |          | Hard       |
+| [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)                                     |          | Hard       |
+| [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)                         |          | Hard       |
 
 ### A\* Search
 

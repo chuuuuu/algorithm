@@ -44,11 +44,9 @@ There 4 types of edges in DFS spanning tree
 
 ### Types of Edges in Undirected Graph
 
-1. There's no cross edge in undirected graph.
-   - You can prove it with proof by contradiction.
-2. backward edge is also a forward edge.
+1. there's no cross edge.
+2. there's no forward edge.
 3. the edge between parent and child is tree edge
-   - it is not forward edge and backward edge
 
 ### Subtree
 
@@ -64,85 +62,14 @@ For examples:
 - the nodes of subtree
 - the number of nodes of subtree
 
-### Reachable Node
-
-The reachable node of a substree is a node which the subtree can get by only using its own forward and backward edges.
-
 ### Lowlink
 
-Lowlink is a subtree aggregate which is the smallest preorder number of reachable nodes.
-
-## Tarjan's Algorithm
-
-```C++
-// used to record preorder & postorder number
-class Clock
-{
-  int _time = 0;
-
-public:
-  int tick()
-  {
-    auto ret = _time;
-    _time += 1;
-    return ret;
-  }
-};
-```
-
-```C++
-// main
-
-// graph[i] contains all next nodes of node i
-vector<vector<int>> graph(n, vector(0, 0));
-
-// dfs setup and call
-vector<int> pre(n, INT_MAX);
-vector<int> post(n, INT_MAX);
-vector<int> lowlinks(n, 0);
-int start = 0;
-Clock clock;
-dfs(start, clock, graph, pre, post, lowlinks)
-```
-
-```C++
-// dfs
-void dfs(int node, Clock &clock, vector<vector<int>> &graph, vector<int> &pre, vector<int> &post, vector<int> &lowlinks)
-{
-  auto time = clock.tick();
-  pre[node] = time;
-  lowlinks[node] = time;
-
-  for (auto child : graph[node])
-  {
-    // cross edge
-    if(post[child] < pre[node])
-    {
-      continue;
-    }
-
-    // tree edge
-    if(pre[node] == INT_MAX)
-    {
-      dfs(child, node, time, graph, times, lowlinks, states);
-    }
-
-    // tree edge and forward edge
-    if(pre[node] < pre[child])
-    {
-      lowlinks[node] = min(lowlinks[node], lowlinks[child]);
-      return;
-    }
-
-    // backward edge
-    lowlinks[node] = min(lowlinks[node], pre[child]);
-  }
-
-  time = clock.tick();
-  postorders[time] = time;
-}
-
-```
+- `lowlink(u)` is the smallest preorder of any node reachable from `u` using zero or more tree edges followed by at most one back or cross edge.
+- lowlink is a subtree aggregate.
+- notice that, if you want to find the strongly connected components, the definition of `lowlink(u)` should be different.
+  - see [wiki](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)
+  - see [video](https://www.youtube.com/watch?v=wUgWX0nc4NY&t=671s&ab_channel=WilliamFiset)
+  - see [handout](https://www.cs.cmu.edu/~15451-f18/lectures/lec19-DFS-strong-components.pdf)
 
 ### Number of Component in Undirected Graph
 
@@ -163,7 +90,7 @@ Time complexity: `O(E(V+E))` for finding all cut edge.
 
 #### Tarjan's Algorithm
 
-For each edge, determine if the lowlink of one node is greater than the preorder number of another node.
+For each edge, determine if the lowlink of child is greater than the preorder of parent.
 
 Time complexity: `O(E)` for finding all cut vertex.
 
@@ -180,10 +107,10 @@ Time complexity: `O(V(V+E))` for finding all cut vertex.
 
 #### Tarjan's Algorithm
 
-For each node:
+During the DFS process, for each node:
 
 1. if it is root, check if the number of edges is 1.
-2. else check if there exists any lowlink of its neighbours is greater or equal to its preorder number.
+2. else check if there exists any lowlink of its child is greater or equal to its preorder number.
 
 Time complexity: `O(V+E)` for finding all cut vertex.
 
@@ -191,17 +118,15 @@ Time complexity: `O(V+E)` for finding all cut vertex.
 
 - `strongly connected`: A directed graph is `strongly connected` if there is a path between all pairs of vertices.
 - `strongly connected component`: A `strongly connected component` (SCC) of a directed graph is a maximal strongly connected subgraph.
-- `root of SCC`: The `root of SCC` is the root of subtree (of DFS spanning tree) where they have the same group of nodes.
+- `root of SCC`: The `root of SCC` is the root of subtree (of DFS spanning tree) where the SCC and the subtree have the same group of nodes.
 
 #### Tarjan's Algorithm
 
-Before DFS precess, we prepare a box.
+Actually, the definition of lowlink is different here. You need to maintain a stack to update lowlink.
 
-In the DFS process, for each node:
-
-- put it into the box after visited all its neighbours
-- if its lowlink equals to its preorder number, it is the root of SCC,
-- if it is the root of SCC, the box become a SCC, and create a new box
+- see [wiki](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)
+- see [video](https://www.youtube.com/watch?v=wUgWX0nc4NY&t=671s&ab_channel=WilliamFiset)
+- see [handout](https://www.cs.cmu.edu/~15451-f18/lectures/lec19-DFS-strong-components.pdf)
 
 ### Meta Graph
 
