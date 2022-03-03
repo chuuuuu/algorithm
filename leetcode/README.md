@@ -2,7 +2,6 @@
 
 - [Interview Question Patterns](#interview-question-patterns)
   - [About](#about)
-    - [Question selection](#question-selection)
   - [Patterns](#patterns)
     - [1D and 2D Array](#1d-and-2d-array)
     - [String](#string)
@@ -35,6 +34,8 @@
     - [Shortest Hamiltonian Path](#shortest-hamiltonian-path)
     - [A\* Search](#a-search)
     - [Max-Flow, Min-Cut](#max-flow-min-cut)
+    - [Ordered Set](#ordered-set)
+    - [Segment Tree](#segment-tree)
   - [Reference](#reference)
 
 ## About
@@ -44,10 +45,6 @@ This is a collection of common interview patterns and questions used to prepare 
 _For example, we may have a toolbox full of tools but are unsure of which problems those tools solve. We could run into a problem of trying to attach a board to another with a screw. Could we hammer the screw? Sure, O(n<sup>2</sup>). Could we hit it with a level? Sure, (Time limit exceded). A better solution is to use a screwdriver. O(nlogn). An even more optimal solution is to use a drill O(n)._
 
 This illustrates that if we just do a bunch of problems, we know we need to get the screw to attach both boards. But knowing the theory of the problems shows us which _tool_ to use.
-
-### Question selection
-
-Questions are gathered from a mix of currated lists and frequently asked questions on leetcode. The majority will be LC Medium difficulty (7-10), with 2-3 easy and 2-3 hard. Feel free to skip the easy or hard, the mediums will be where you get the most bang for your buck.
 
 ## Patterns
 
@@ -60,7 +57,6 @@ Questions are gathered from a mix of currated lists and frequently asked questio
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C++](find-all-duplicates-in-an-array/sol.cpp) | Medium     |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)       |                                                | Medium     |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)               | [C++](maximum-product-subarray/sol.cpp)        | Medium     |
-| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)                             |                                                | Medium     |
 | [String Compression](https://leetcode.com/problems/string-compression/)                           | [C++](string-compression/sol.cpp)              | Medium     |
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                     |                                                | Medium     |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                             | [C++](set-matrix-zeroes/sol.cpp)               | Medium     |
@@ -107,11 +103,16 @@ https://emre.me/coding-patterns/sliding-window/
 
 ### Monotonic Queue / Stack
 
-| Title                                                                                                         | Solution | Difficulty |
-| ------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                               |          | Hard       |
-| [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) |          | Hard       |
-| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)               |          | Hard       |
+| Title                                                                                                                     | Solution | Difficulty |
+| ------------------------------------------------------------------------------------------------------------------------- | -------- | ---------- |
+| [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)                                           |          | Easy       |
+| [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)                                                         |          | Medium     |
+| [Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/) |          | Medium     |
+| [132 Pattern](https://leetcode.com/problems/132-pattern/)                                                                 |          | Medium     |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                           |          | Hard       |
+| [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)             |          | Hard       |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)                           |          | Hard       |
+| [Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/)                   |          | Hard       |
 
 ### Two Pointers or Iterators
 
@@ -207,28 +208,32 @@ https://emre.me/coding-patterns/breadth-first-search/
 https://emre.me/coding-patterns/depth-first-search/  
 _make sure you can solve dfs both recursively **and** iteratively_
 
-| Title                                                                                                                                                 | Solution                          | Difficulty |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- |
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                               | [C++](invert-binary-tree/sol.cpp) | Easy       |
-| [Path Sum](https://leetcode.com/problems/path-sum/)                                                                                                   | [C++](path-sum/sol.cpp)           | Easy       |
-| [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                 |                                   | Easy       |
-| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                     |                                   | Easy       |
-| [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)                                                                       |                                   | Easy       |
-| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                           |                                   | Easy       |
-| [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)                       |                                   | Easy       |
-| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                                                     |                                   | Easy       |
-| [Path Sum II](https://leetcode.com/problems/path-sum-ii/)                                                                                             |                                   | Medium     |
-| [Path Sum III](https://leetcode.com/problems/path-sum-iii/)                                                                                           |                                   | Medium     |
-| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                                                         |                                   | Medium     |
-| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)                                     |                                   | Medium     |
-| [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)                                                                             |                                   | Medium     |
-| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                           |                                   | Medium     |
-| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |                                   | Medium     |
-| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                             |                                   | Medium     |
-| [Target Sum](https://leetcode.com/problems/target-sum/)                                                                                               |                                   | Medium     |
-| [Split BST](https://leetcode.com/problems/split-bst/)                                                                                                 |                                   | Medium     |
-| [Word Search](https://leetcode.com/problems/word-search-ii/)                                                                                          |                                   | Hard       |
-| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                           |                                   | Hard       |
+| Title                                                                                                                                                     | Solution                          | Difficulty |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                                   | [C++](invert-binary-tree/sol.cpp) | Easy       |
+| [Path Sum](https://leetcode.com/problems/path-sum/)                                                                                                       | [C++](path-sum/sol.cpp)           | Easy       |
+| [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                     |                                   | Easy       |
+| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                         |                                   | Easy       |
+| [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)                                                                           |                                   | Easy       |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                               |                                   | Easy       |
+| [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)                           |                                   | Easy       |
+| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)                                                                         |                                   | Easy       |
+| [Path Sum II](https://leetcode.com/problems/path-sum-ii/)                                                                                                 |                                   | Medium     |
+| [Path Sum III](https://leetcode.com/problems/path-sum-iii/)                                                                                               |                                   | Medium     |
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)                                                             |                                   | Medium     |
+| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)                                         |                                   | Medium     |
+| [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)                                                                                 |                                   | Medium     |
+| [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                                               |                                   | Medium     |
+| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)     |                                   | Medium     |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                                                                 |                                   | Medium     |
+| [Target Sum](https://leetcode.com/problems/target-sum/)                                                                                                   |                                   | Medium     |
+| [Split BST](https://leetcode.com/problems/split-bst/)                                                                                                     |                                   | Medium     |
+| [Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/)                                                                         |                                   | Medium     |
+| [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)     |                                   | Medium     |
+| [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)   |                                   | Medium     |
+| [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) |                                   | Medium     |
+| [Word Search](https://leetcode.com/problems/word-search-ii/)                                                                                              |                                   | Hard       |
+| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                               |                                   | Hard       |
 
 ### BFS or DFS
 
@@ -258,7 +263,6 @@ https://emre.me/coding-patterns/two-heaps/
 | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)                             | [C++](find-k-pairs-with-smallest-sums/sol.cpp) | Medium     |
 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/)                                                               |                                                | Medium     |
-| [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)                                   |                                                | Medium     |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                             |                                                | Medium     |
 | [Kth Largest Element](https://leetcode.com/problems/kth-largest-element-in-an-array/)                                         |                                                | Medium     |
 | [K Closests Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)                                      |                                                | Medium     |
@@ -395,6 +399,8 @@ https://emre.me/coding-patterns/knapsack/
 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)                                   | [C++](best-time-to-buy-and-sell-stock-iii/sol.cpp)                  | Hard       |
 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)                                     | [C++](best-time-to-buy-and-sell-stock-iv/sol.cpp)                   | Hard       |
 | [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)                                         |                                                                     | Hard       |
+| [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)                                                                   |                                                                     | Hard       |
+| [Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/)                                 |                                                                     | Hard       |
 
 ### Backtracking
 
@@ -446,8 +452,8 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 
 | Title                                                                                                                                                               | Solution                                      | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------- |
-| [https://leetcode.com/problems/min-cost-to-connect-all-points/](Min Cost to Connect All Points)                                                                     | [C++](min-cost-to-connect-all-points/sol.cpp) | Medium     |
-| [https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/](Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree) |                                               | Hard       |
+| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)                                                                     | [C++](min-cost-to-connect-all-points/sol.cpp) | Medium     |
+| [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) |                                               | Hard       |
 
 ### Strongly Connected Components: Tarjan's Algorithm / Finding Bridge and Articulation Point
 
@@ -484,6 +490,18 @@ https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtr
 | Title                                                                                       | Solution | Difficulty |
 | ------------------------------------------------------------------------------------------- | -------- | ---------- |
 | [Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/) |          | Hard       |
+
+### Ordered Set
+
+| Title                                                         | Solution | Difficulty |
+| ------------------------------------------------------------- | -------- | ---------- |
+| [My Calendar I](https://leetcode.com/problems/my-calendar-i/) |          | Medium     |
+
+### Segment Tree
+
+| Title                                                                               | Solution | Difficulty |
+| ----------------------------------------------------------------------------------- | -------- | ---------- |
+| [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) |          | Medium     |
 
 ## Reference
 
