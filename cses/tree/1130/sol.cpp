@@ -6,7 +6,7 @@ using ll = long long;
 
 // template<class T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-void dfs(int node, int prev, vector<vector<int>> &adjs, vector<bool> &isMatchs, int &ans)
+void dfs(int node, int prev, vector<vector<int>> &adjs, vector<int> &cnts, vector<int> &excludeCnts)
 {
   for (int neighbour : adjs[node])
   {
@@ -15,13 +15,20 @@ void dfs(int node, int prev, vector<vector<int>> &adjs, vector<bool> &isMatchs, 
       continue;
     }
 
-    dfs(neighbour, node, adjs, isMatchs, ans);
-    if (!isMatchs[node] && !isMatchs[neighbour])
+    dfs(neighbour, node, adjs, cnts, excludeCnts);
+    excludeCnts[node] += cnts[neighbour];
+  }
+
+  cnts[node] = excludeCnts[node];
+
+  for (int neighbour : adjs[node])
+  {
+    if (neighbour == prev)
     {
-      isMatchs[node] = true;
-      isMatchs[neighbour] = true;
-      ans++;
+      continue;
     }
+
+    cnts[node] = max(cnts[node], excludeCnts[node] - cnts[neighbour] + 1 + excludeCnts[neighbour]);
   }
 }
 
@@ -39,11 +46,13 @@ void solve()
     adjs[b].push_back(a);
   }
 
-  int ans = 0;
-  vector<bool> isMatchs(n + 1, false);
-  dfs(1, 0, adjs, isMatchs, ans);
+  // cnts[i]: max number of matching of subtree i
+  vector<int> cnts(n + 1, 0);
+  // excludeCnts[i]: max number of matching of subtree i if we exclude the node i
+  vector<int> excludeCnts(n + 1, 0);
+  dfs(1, 0, adjs, cnts, excludeCnts);
 
-  cout << ans;
+  cout << cnts[1];
 }
 
 int main()
